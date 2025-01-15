@@ -1,0 +1,121 @@
+/* 基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* 限制最大宽度 */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#red-balls, #blue-ball {
+    margin: 10px 0;
+}
+
+/* 数字球样式 */
+.ball {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 8px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.blue {
+    background-color: #2980b9;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .ball {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ball {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.1em;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+}
